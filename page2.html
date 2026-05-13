@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина — KUGOO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+
+</head>
+<body>
+
+<div class="cart-wrap">
+  <div class="cart-card">
+
+    <!-- Header -->
+    <div class="cart-header">
+      <h3>В вашей корзине</h3>
+      <span class="cart-count" id="cart-count">3 товара</span>
+    </div>
+
+    <!-- Items -->
+    <div class="cart-items" id="cart-items">
+
+      <div class="cart-item" data-price="29900">
+        <div class="item-img"><img src="Group 1867.png" alt=""></div>
+        <div class="item-info">
+          <p class="item-name">Kugoo Kirin M4</p>
+          <div class="item-price-row">
+            <span class="item-price">29 900 ₽</span>
+            <span class="item-qty">1 шт.</span>
+          </div>
+        </div>
+        <button class="item-delete" onclick="removeItem(this)" aria-label="Удалить">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+
+      <div class="cart-item" data-price="29900">
+        <div class="item-img"><img src="Group 1867.png" alt=""></div>
+        <div class="item-info">
+          <p class="item-name">Kugoo Kirin M4</p>
+          <div class="item-price-row">
+            <span class="item-price">29 900 ₽</span>
+            <span class="item-qty">1 шт.</span>
+          </div>
+        </div>
+        <button class="item-delete" onclick="removeItem(this)" aria-label="Удалить">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+
+      <div class="cart-item" data-price="29900">
+        <div class="item-img"><img src="Group 1867.png" alt=""></div>
+        <div class="item-info">
+          <p class="item-name">Kugoo Kirin M4</p>
+          <div class="item-price-row">
+            <span class="item-price">29 900 ₽</span>
+            <span class="item-qty">1 шт.</span>
+          </div>
+        </div>
+        <button class="item-delete" onclick="removeItem(this)" aria-label="Удалить">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="cart-footer">
+      <div>
+        <div class="footer-sum-label">Сумма:</div>
+        <div class="footer-sum-value" id="total">59 800 ₽</div>
+      </div>
+      <button class="checkout-btn">Оформить заказ</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>
